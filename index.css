@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image-introduction {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5rem;
+  margin-bottom: 100px;
+}
+
+.image-introduction img {
+  max-width: 100%;
+}
+
+.downloads {
+  grid-row: 2;
+  grid-column: 1/3;
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.downloads h1 {
+  padding: 0px 20px;
+  margin: 0px;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  font-family: "Prompt", sans-serif;
+  color: #28283d;
+  text-align: center;
+}
+
+.downloads p {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: lighter;
+  text-align: center;
+  font-family: "Cabin", sans-serif;
+  letter-spacing: 1px;
+  color: gray;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigbut {
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 150ms ease-in-out;
+}
+
+.bigbut:hover {
+  transform: scale(1.1);
+  background-color: #4d97a9d8;
+  cursor: pointer;
+}
+
+.dow {
+  background-color: #4d96a9;
+  color: white;
+}
+
+.buttons span {
+  color: #8fe3f9;
+}
+
+.buttons .it {
+  background-color: #855fb1;
+  color: white;
+}
+
+.it:hover {
+  transform: scale(1.1);
+  background-color: #4d97a9d8;
+  cursor: pointer;
+}
+
+.second-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.second-image-image img {
+  max-width: 100%;
+}
+
+.second-image-image {
+  max-width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.second-image-heading {
+  max-width: 500px;
+  margin-top: 100px;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.fancy-heading {
+  color: #4d96a9;
+  font-family: "Prompt", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.normal-heading {
+  color: #28283d;
+  font-family: "Prompt", sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  letter-spacing: 2px;
+}
+
+.normal-paragraph {
+  color: gray;
+  font-family: "Cabin", sans-serif;
+  padding: 20px;
+  letter-spacing: 2px;
+}
+
+.ending-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(
+      0deg,
+      rgba(6, 214, 241, 0.979),
+      rgba(6, 214, 241, 0.979)
+    ),
+    url("img/background-scope-desktop@2x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 300px;
+  background-blend-mode: multiply;
+  text-align: center;
+}
+
+.ending-box h1 {
+  color: white;
+  font-family: "Prompt", sans-serif;
+  letter-spacing: 2px;
+}
+
+.ending-box p {
+  color: white;
+  font-family: "Cabin", sans-serif;
+}
+
+@media (min-width: 650px) {
+  .buttons {
+    flex-direction: row;
+  }
+
+  .buttons .bigbut {
+    margin-right: 20px;
+  }
+
+  .downloads {
+    padding: 0 20%;
+  }
+
+  .ending-box {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 670px) {
+  .second-image-image {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .image-introduction {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .downloads {
+    grid-row: initial;
+    grid-column: 2/4;
+    padding: 0 10%;
+  }
+
+  .logo {
+    min-height: 200px;
+  }
+
+  .downloads h1 {
+    font-size: 2.7rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .downloads {
+    padding: 0 20%;
+  }
+
+  .downloads h1 {
+    font-size: 4rem;
+  }
+}
